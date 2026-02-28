@@ -6,7 +6,7 @@ df = pd.read_csv(r"Database/food.csv")
 print("Original Shape:", df.shape)
 
 # Remove unwanted columns
-columns_to_remove = ['meal_id']  # replace with real names
+columns_to_remove = ['meal_id'] 
 df = df.drop(columns=columns_to_remove, errors='ignore')
 
 # Remove completely empty rows
